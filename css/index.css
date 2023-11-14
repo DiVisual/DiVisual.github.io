@@ -1,0 +1,137 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-image: url(../img/bg3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navigation {
+  display: flex;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 100%;
+  /* border-right: 1px solid black; */
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  font-size: x-large;
+  box-shadow: 2px 1px 30px;
+}
+
+nav h1 {
+  margin-bottom: 100px;
+}
+
+.navigation p {
+  padding: 7px;
+  transition: transform 0.5s ease;
+}
+
+.navigation p:hover {
+  transform: scale(1.2);
+  text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.719);
+}
+
+.main {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  margin-left: 300px;
+  padding: 20px;
+}
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.photo img {
+  height: 300px;
+  margin: 5px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.719);
+  transition: transform 0.5s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.2);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.719);
+}
+
+.about {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  margin: 40px 50px 0;
+  padding: 15px;
+  font-size: x-large;
+}
+
+.about img {
+  height: 450px;
+  /* margin-left: 40px;
+  margin-bottom: 40px; */
+  margin: 20px 20px 30px 35px;
+  float: inline-end;
+  box-shadow: 10px 10px 15px #000000e0;
+  transition: transform 0.5s ease;
+}
+
+.about img:hover {
+  transform: scale(1.2);
+  box-shadow: 15px 15px 20px #000000e0;
+}
+
+.contacts {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contacts img {
+  height: 50px;
+  /* transition: transform 0.5s ease; */
+  animation: pulse 2s infinite;
+}
+
+/* .contacts img:hover {
+transform: scale(1.2);
+} */
+
+.contacts h2 {
+  color: #00000000;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer p {
+  box-sizing: border-box;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
